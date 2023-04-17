@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="images">
+    <file>images/map.png</file>
+    <file>images/map.png</file>
+    <file>images/battery.png</file>
+    <file>images/logo.png</file>
+  </qresource>
+</RCC>

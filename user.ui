@@ -1,0 +1,1659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(15, 32, 39, 255), stop:1 rgba(44, 83, 100, 255));
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="top_frame">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="central_frame">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="leftMargin">
+        <number>100</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="left_frame">
+         <property name="minimumSize">
+          <size>
+           <width>750</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_6">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>611</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame#frame_6{
+image: url(:/images/images/logo.png);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QFrame" name="map_frame">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>751</width>
+               <height>611</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame#map_frame{
+	image: url(:/images/images/map.png);
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="robot_status">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="centered">
+         <property name="maximumSize">
+          <size>
+           <width>280</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>25</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="loading_frame">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>336</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame#loading_frame{
+border: 3px solid #c4c4c4;
+border-radius: 30px;
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <property name="leftMargin">
+              <number>15</number>
+             </property>
+             <property name="topMargin">
+              <number>25</number>
+             </property>
+             <property name="rightMargin">
+              <number>15</number>
+             </property>
+             <property name="bottomMargin">
+              <number>25</number>
+             </property>
+             <property name="horizontalSpacing">
+              <number>10</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>16</number>
+             </property>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="load_r">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: transparent;
+
+background-color: #4286f4;
+}</string>
+               </property>
+               <property name="text">
+                <string>R</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="1">
+              <widget class="QPushButton" name="clear_btn">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: rgb(208, 208, 208);
+	color: rgb(66, 66, 66);
+border:0px;
+}</string>
+               </property>
+               <property name="text">
+                <string>Sil</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QPushButton" name="unload_l">
+               <property name="minimumSize">
+                <size>
+                 <width>105</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: transparent;
+
+background-color: #4286f4;
+}</string>
+               </property>
+               <property name="text">
+                <string>L</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QPushButton" name="load_d">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: transparent;
+
+background-color: #4286f4;
+}</string>
+               </property>
+               <property name="text">
+                <string>D</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QPushButton" name="unload_r">
+               <property name="minimumSize">
+                <size>
+                 <width>105</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: transparent;
+
+background-color: #4286f4;
+}</string>
+               </property>
+               <property name="text">
+                <string>R</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="1">
+              <widget class="QPushButton" name="tur2_btn">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: rgb(208, 208, 208);
+	color: rgb(66, 66, 66);
+border:0px;
+}</string>
+               </property>
+               <property name="text">
+                <string>2.Yükleme</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="load_u">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: transparent;
+
+background-color: #4286f4;
+}</string>
+               </property>
+               <property name="text">
+                <string>U</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLineEdit" name="loading_lineedit">
+               <property name="minimumSize">
+                <size>
+                 <width>223</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: #203A43;
+border: 2px solid #203A43;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_8">
+               <property name="styleSheet">
+                <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+color: rgb(240, 235, 227);</string>
+               </property>
+               <property name="text">
+                <string>Boşaltma</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="load_l">
+               <property name="minimumSize">
+                <size>
+                 <width>105</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: transparent;
+
+background-color: #4286f4;
+}</string>
+               </property>
+               <property name="text">
+                <string>L</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QPushButton" name="unload_d">
+               <property name="minimumSize">
+                <size>
+                 <width>111</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: transparent;
+
+background-color: #4286f4;
+}</string>
+               </property>
+               <property name="text">
+                <string>D</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_7">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+color: rgb(240, 235, 227);</string>
+               </property>
+               <property name="text">
+                <string>Yükleme</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="0">
+              <widget class="QPushButton" name="start_btn">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+	background-color:#4286f4;
+border: 0px;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: rgb(208, 208, 208);
+	color: rgb(66, 66, 66);
+}</string>
+               </property>
+               <property name="text">
+                <string>Başlat</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLineEdit" name="unloading_lineedit">
+               <property name="minimumSize">
+                <size>
+                 <width>223</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: #203A43;
+border: 2px solid #203A43;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QPushButton" name="unload_u">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: transparent;
+
+background-color: #4286f4;
+}</string>
+               </property>
+               <property name="text">
+                <string>U</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0">
+              <widget class="QPushButton" name="tur1_btn">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: rgb(208, 208, 208);
+	color: rgb(66, 66, 66);
+border:0px;
+}</string>
+               </property>
+               <property name="text">
+                <string>1.Yükleme</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="start_frame">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="right_frame">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>25</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="speed_and_battery">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>550</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <property name="spacing">
+              <number>25</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="velocity_container">
+               <property name="minimumSize">
+                <size>
+                 <width>250</width>
+                 <height>250</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>250</width>
+                 <height>250</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QFrame#velocity_container{
+background-color: #203A43;
+border-radius: 125;
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QFrame" name="progress_frame">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>250</width>
+                  <height>250</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QFrame#progress_frame{
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.49 rgba(255, 255, 255, 0), stop:0.5 rgba(66, 134, 244, 255));
+border-radius: 125px;
+}
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QFrame" name="frame">
+                 <property name="geometry">
+                  <rect>
+                   <x>20</x>
+                   <y>20</y>
+                   <width>210</width>
+                   <height>210</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: #22414e;
+border-radius: 105px;</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QLabel" name="speed_label">
+                  <property name="geometry">
+                   <rect>
+                    <x>40</x>
+                    <y>80</y>
+                    <width>131</width>
+                    <height>51</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 63 32pt &quot;Bahnschrift SemiBold&quot;;
+color: #4286f4;</string>
+                  </property>
+                  <property name="text">
+                   <string>0.2</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                 <widget class="QLabel" name="label_10">
+                  <property name="geometry">
+                   <rect>
+                    <x>70</x>
+                    <y>130</y>
+                    <width>80</width>
+                    <height>40</height>
+                   </rect>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+color: rgb(240, 235, 227);</string>
+                  </property>
+                  <property name="text">
+                   <string>m/s</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </widget>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="battery_frame">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>288</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>270</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QFrame#battery_frame{
+
+border: 3px solid #c4c4c4;
+border-radius: 30px;
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7" stretch="0,0">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>15</number>
+                </property>
+                <property name="topMargin">
+                 <number>12</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QFrame" name="battery">
+                  <property name="maximumSize">
+                   <size>
+                    <width>200</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QFrame#battery{
+image: url(:/images/images/battery.png);
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <widget class="QFrame" name="frame_3">
+                   <property name="geometry">
+                    <rect>
+                     <x>18</x>
+                     <y>31</y>
+                     <width>155</width>
+                     <height>76</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: #4286f4;</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                  <widget class="QFrame" name="battery_pct">
+                   <property name="geometry">
+                    <rect>
+                     <x>18</x>
+                     <y>31</y>
+                     <width>155</width>
+                     <height>76</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: #234351;</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_2">
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_3">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>10</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>20</number>
+                   </property>
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item row="0" column="0" colspan="2">
+                    <widget class="QLabel" name="label_11">
+                     <property name="maximumSize">
+                      <size>
+                       <width>180</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 63 32pt &quot;Bahnschrift SemiBold&quot;;
+color: #4286f4;</string>
+                     </property>
+                     <property name="text">
+                      <string>%40</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="label_12">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+color: rgb(240, 235, 227);</string>
+                     </property>
+                     <property name="text">
+                      <string>Volt</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QLabel" name="label_14">
+                     <property name="styleSheet">
+                      <string notr="true">font: 63 18pt &quot;Bahnschrift SemiBold&quot;;
+color: #4286f4;</string>
+                     </property>
+                     <property name="text">
+                      <string>25 V</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_13">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+color: rgb(240, 235, 227);</string>
+                     </property>
+                     <property name="text">
+                      <string>Akım</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLabel" name="label_15">
+                     <property name="styleSheet">
+                      <string notr="true">font: 63 18pt &quot;Bahnschrift SemiBold&quot;;
+color: #4286f4;</string>
+                     </property>
+                     <property name="text">
+                      <string>11 A</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="tbk">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="bottom_frame">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>60</number>
+       </property>
+       <property name="leftMargin">
+        <number>100</number>
+       </property>
+       <property name="bottomMargin">
+        <number>28</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="step_1">
+         <property name="maximumSize">
+          <size>
+           <width>250</width>
+           <height>170</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame#step_1{
+border: 3px solid #c4c4c4;
+border-radius: 30px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <property name="leftMargin">
+           <number>15</number>
+          </property>
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <property name="rightMargin">
+           <number>30</number>
+          </property>
+          <property name="bottomMargin">
+           <number>15</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>50</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>2</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="step1_label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 24pt &quot;Bahnschrift SemiBold&quot;;
+color: #4286f4;</string>
+            </property>
+            <property name="text">
+             <string>1. Tur</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="loading1">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+color: #4286f4;</string>
+            </property>
+            <property name="text">
+             <string>Yükleme</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="unloading1">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+color: #4286f4;</string>
+            </property>
+            <property name="text">
+             <string>Boşaltma</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="step_2">
+         <property name="maximumSize">
+          <size>
+           <width>250</width>
+           <height>170</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame#step_2{
+border: 3px solid #c4c4c4;
+border-radius: 30px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <property name="leftMargin">
+           <number>15</number>
+          </property>
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <property name="rightMargin">
+           <number>30</number>
+          </property>
+          <property name="bottomMargin">
+           <number>15</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>50</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>2</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="step2_label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 24pt &quot;Bahnschrift SemiBold&quot;;
+color: rgb(141, 141, 141);</string>
+            </property>
+            <property name="text">
+             <string>2. Tur</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="loading2">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+color: rgb(141, 141, 141);</string>
+            </property>
+            <property name="text">
+             <string>Yükleme</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="unloading2">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+color: rgb(141, 141, 141);</string>
+            </property>
+            <property name="text">
+             <string>Boşaltma</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_5">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>170</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>39</x>
+            <y>59</y>
+            <width>41</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #EB1D36;
+font: 83 28pt &quot;Bahnschrift Bold&quot;;</string>
+          </property>
+          <property name="text">
+           <string>←</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>167</x>
+            <y>59</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #EB1D36;
+font: 83 18pt &quot;Bahnschrift Bold&quot;;</string>
+          </property>
+          <property name="text">
+           <string>R</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>135</x>
+            <y>59</y>
+            <width>41</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #EB1D36;
+font: 83 28pt &quot;Bahnschrift Bold&quot;;</string>
+          </property>
+          <property name="text">
+           <string>→</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>85</x>
+            <y>94</y>
+            <width>41</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #EB1D36;
+font: 83 28pt &quot;Bahnschrift Bold&quot;;</string>
+          </property>
+          <property name="text">
+           <string>↓</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>85</x>
+            <y>10</y>
+            <width>41</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #EB1D36;
+font: 83 28pt &quot;Bahnschrift Bold&quot;;</string>
+          </property>
+          <property name="text">
+           <string>↑</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_16">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>140</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #EB1D36;
+font: 83 18pt &quot;Bahnschrift Bold&quot;;</string>
+          </property>
+          <property name="text">
+           <string>D</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>0</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #EB1D36;
+font: 83 18pt &quot;Bahnschrift Bold&quot;;</string>
+          </property>
+          <property name="text">
+           <string>U</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>59</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #EB1D36;
+font: 83 18pt &quot;Bahnschrift Bold&quot;;</string>
+          </property>
+          <property name="text">
+           <string>L</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="final_lineedit">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>90</y>
+            <width>223</width>
+            <height>40</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>223</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #203A43;
+border: 2px solid #203A43;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="final_l">
+          <property name="geometry">
+           <rect>
+            <x>580</x>
+            <y>40</y>
+            <width>105</width>
+            <height>40</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>105</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: transparent;
+
+background-color: #4286f4;
+}</string>
+          </property>
+          <property name="text">
+           <string>L</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="final_u">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>40</y>
+            <width>111</width>
+            <height>40</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: transparent;
+
+background-color: #4286f4;
+}</string>
+          </property>
+          <property name="text">
+           <string>U</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="final_d">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>40</y>
+            <width>111</width>
+            <height>40</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>111</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: transparent;
+
+background-color: #4286f4;
+}</string>
+          </property>
+          <property name="text">
+           <string>D</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="final_r">
+          <property name="geometry">
+           <rect>
+            <x>450</x>
+            <y>40</y>
+            <width>105</width>
+            <height>40</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>105</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>80</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+border: 2px solid #4286f4;
+border-radius: 15px;
+	font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover{
+background-color: transparent;
+
+background-color: #4286f4;
+}</string>
+          </property>
+          <property name="text">
+           <string>R</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>10</y>
+            <width>111</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+color: rgb(240, 235, 227);</string>
+          </property>
+          <property name="text">
+           <string>Bitiş</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>140</y>
+            <width>121</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+color: rgb(240, 235, 227);</string>
+          </property>
+          <property name="text">
+           <string>Görev süresi:</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="time_label">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>140</y>
+            <width>111</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 63 14pt &quot;Bahnschrift SemiBold&quot;;
+color: #4286f4;</string>
+          </property>
+          <property name="text">
+           <string>0 dk</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
